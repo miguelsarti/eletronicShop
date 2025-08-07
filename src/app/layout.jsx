@@ -2,6 +2,7 @@ import Header from "../components/Header/Header";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 
+
 const roboto = localFont({
     src: [
         {
@@ -21,13 +22,15 @@ const roboto = localFont({
 
 
 export default function ({ children }) {
+
+  
   return (
     <html lang="pt-BR" className={roboto.variable}>
       <body className={roboto.variable}>
         <Header 
         title="Loja de Eletrônicos"
         subtitle="Encontre os melhores produtos"
-        totalProducts={0}
+        total={0}
         /> 
         {children}
       </body>
